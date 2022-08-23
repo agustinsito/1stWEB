@@ -506,88 +506,60 @@ ol, ul {
 .imagen_alojamiento {
     margin-top: 30px;
     width: 100%;
-    background-image: url(../assets/img/alojamiento.jpg);
-
+    background-image: url( ../assets/img/alojamiento.jpg);
 }
 
 
 /**formulario**/
 
-.boton {
-    color: #e0fbfc;
-    font-size: 1.2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: .5rem;
-    margin-top: 1rem;
-    border-style: none;
-    padding: 1rem 2rem;
-    background: linear-gradient(180deg, #2046b7 100%, #0a1c50 100%);
-    text-shadow: 1px 1px 1px #528ecc;
-    box-shadow: none;
+.contact-form{
+    background-color: rgba(0, 0, 0, 0.152);
+    border-radius: 50px;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 12%;
+    margin-top: 50px;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -10%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -15%;
+    text-align: center;
+    color: #88b9ee;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 2rem;
+    padding: 1.5%;
+    background: #414afb;
+    font-weight: 600;
+    color: #fff;
     cursor: pointer;
 }
-
-.boton:hover {
-    color: #000000;
-}
-
-.contenedorcontacto {
-    padding: 40px;
-}
-
-.form {
-    background-color: rgba(0, 0, 0, 0.168);
-    color: #e0fbfc;
-    width: min(50rem);
-    margin: 0 auto;
-    -webkit-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-    padding: 2rem;
+.btnContactSubmit
+{
+    width: 50%;
     border-radius: 1rem;
-}
-
-.form h2 {
-    font-family: 'Titillium Web', sans-serif;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-    width: 20rem;
-}
-
-.formulario fieldset {
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
     border: none;
-}
-
-.formulario legend {
-    margin: auto;
-    padding: 1rem;
-}
-
-.campo {
-    margin: 1rem;
-}
-
-.campo textarea {
-    height: 10rem;
-}
-
-.campo label {
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    font-weight: bold;
-    margin-bottom: .2rem;
-
-}
-
-.input {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: min(60rem, 100%);
-    color: black;
-    border-radius: 10px;
-    border: none;
-    padding: 0.8rem;
+    cursor: pointer;
 }
 
 /* VUELOS-VUELOS-VUELOS-VUELOS-VUELOS-VUELOS-VUELOS-VUELOS-VUELOS- */
