@@ -2,6 +2,7 @@
 /* COLORES-COLORES-COLORES-COLORES-COLORES-COLORES-COLORES-COLORES-COLORES */
 
 $colordark: #303081;
+$colordark2: #0b1c4d;
 $colorlight: #7495f7;
 $colorwhite: #c9d5f7;
 $gradient: linear-gradient(0deg, rgba(48, 48, 129, 1) 33%, rgba(69, 69, 224, 1) 100%);
@@ -12,13 +13,25 @@ $fuente1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $fuentetitles: 'Titillium Web', sans-serif;
 
 
-
-
-
 main {
     background-color: $colordark;
 }
 
+
+/* MIXIN- MIXIN -MIXIN- MIXIN -MIXIN- MIXIN -MIXIN- MIXIN -MIXIN- MIXIN -MIXIN- MIXIN -MIXIN- MIXIN -MIXIN */
+
+
+// botones.
+@mixin botones {
+    font-family: $fuentetitles;
+    font-size: 23px;
+    text-decoration: none;
+    color: #ffd900;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #2929f63e;
+}
+// botones.
 
 
 /* HEADER-HEADER-HEADER-HEADER-HEADER-HEADER-HEADER-HEADER-HEADER */
@@ -353,15 +366,8 @@ ol, ul {
 
 }
 
-
-.buttons {
-    font-family: $fuentetitles;
-    font-size: 23px;
-    text-decoration: none;
-    color: #ffd900;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #2929f63e;
+.buttons{
+    @include botones;
 }
 
 .buttons:hover {
@@ -598,25 +604,12 @@ ol, ul {
 }
 
 .box2 {
-    background-color: $colordark;
-    -webkit-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-    margin: 15px;
-    padding: 15px;
-    column-width: 400px;
-    border-radius: 10px;
+    @extend .box1;
+
 }
 
-.box3 {
-    background-color: $colordark;
-    -webkit-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-    margin: 15px;
-    padding: 15px;
-    column-width: 400px;
-    border-radius: 10px;
+.box3{
+    @extend .box1;
     margin-bottom: 40px;
 
 }

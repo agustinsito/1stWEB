@@ -4,6 +4,7 @@ main {
   background-color: #303081;
 }
 
+/* MIXIN- MIXIN -MIXIN- MIXIN -MIXIN- MIXIN -MIXIN- MIXIN -MIXIN- MIXIN -MIXIN- MIXIN -MIXIN- MIXIN -MIXIN */
 /* HEADER-HEADER-HEADER-HEADER-HEADER-HEADER-HEADER-HEADER-HEADER */
 .navbar {
   background-color: white;
@@ -183,7 +184,6 @@ body {
   display: inline-block;
   background-color: #f5f5ff;
   line-height: 40px;
-  -webkit-box-shadow: none;
   box-shadow: none;
   margin-right: 10px;
 }
@@ -254,12 +254,16 @@ ol, ul {
 }
 
 .destino1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   display: grid;
   justify-items: center;
 }
 
 .destino2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   display: grid;
   justify-items: center;
@@ -283,8 +287,6 @@ ol, ul {
   border-radius: 10px;
   max-width: 50%;
   min-width: 300px;
-  -webkit-box-shadow: 0px 10px 20px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 20px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 20px -7px rgba(0, 0, 0, 0.75);
 }
 
@@ -560,38 +562,18 @@ ol, ul {
   align-items: center;
 }
 
-.box1 {
+.box1, .box3, .box2 {
   background-color: #303081;
-  -webkit-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
   margin: 15px;
   padding: 15px;
-  column-width: 400px;
+  -moz-column-width: 400px;
+       column-width: 400px;
   border-radius: 10px;
   margin-top: 40px;
 }
 
-.box2 {
-  background-color: #303081;
-  -webkit-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-  margin: 15px;
-  padding: 15px;
-  column-width: 400px;
-  border-radius: 10px;
-}
-
 .box3 {
-  background-color: #303081;
-  -webkit-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 5px 20px -7px rgba(0, 0, 0, 0.75);
-  margin: 15px;
-  padding: 15px;
-  column-width: 400px;
-  border-radius: 10px;
   margin-bottom: 40px;
 }
 
@@ -836,6 +818,4 @@ ol, ul {
   .divbox {
     flex-wrap: wrap;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
