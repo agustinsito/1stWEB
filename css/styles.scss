@@ -279,16 +279,17 @@ ol, ul {
 }
 
 .destino1{
-    width: fit-content;
     display: grid;
     justify-items: center;
 }
 .destino2{
-    width: fit-content;
     display: grid;
     justify-items: center;
 
 }
+
+
+
 
 .contenedordestinos p {
     font-size: 20px;
@@ -296,13 +297,13 @@ ol, ul {
     text-align: center;
     width: 50%;
     font-family: $fuente1;
-
 }
 
 .contenedordestinos h2 {
     font-family: $fuentetitles;
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .contenedordestinos img {
@@ -312,6 +313,7 @@ ol, ul {
     -webkit-box-shadow: 0px 10px 20px -7px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 20px -7px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 20px -7px rgba(0, 0, 0, 0.75);
+    margin: 20px;
 }
 
 .efectoimagen:hover {
@@ -335,7 +337,9 @@ ol, ul {
     font-family: $fuente1;
 }
 
-
+.divbox span{
+    color: #ffd900;
+}
 .oferta1 {
     text-align: center;
     width: 300px;
@@ -819,12 +823,17 @@ ol, ul {
 
     /* header header header header header header header*/
 
-
 }
 
 @media (max-width: 768px){
 
+    .footer_area{
+        text-align: center;
+    }
 
+    .widget-title{
+        margin: 10px;
+    }
     .efectoimagen:hover {
             transform: scale(1);
             transition: 0;
@@ -857,16 +866,16 @@ ol, ul {
     }
 
     .oferta1{
-        width: 250px;
+        width: 350px;
         margin-bottom: 30px;
     }
     
     .oferta2{
-        width: 250px;
+        width: 350px;
         margin-bottom: 30px;
     }
     .oferta3{
-        width: 250px;
+        width: 350px;
         margin-bottom: 30px;
     }
 
